@@ -1,0 +1,15 @@
+  
+name: Run Test
+
+on: push
+
+jobs:
+  run-and-test:
+    name: Run and Test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Build Code
+        run: cd ./src && make && ls -l
+      - name: Nominal Run
+        run: ./linked-list
