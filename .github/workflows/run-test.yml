@@ -12,4 +12,4 @@ jobs:
       - name: Build Code
         run: cd ./src && make && ls -l
       - name: Nominal Run
-        run: ./linked-list
+        run: ./src/linked-list
